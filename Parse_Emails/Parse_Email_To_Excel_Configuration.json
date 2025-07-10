@@ -1,0 +1,18 @@
+{
+    "Email_Directories":[
+                            "//clifford/Search/1234/2025_EMAILS/2025_06_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_06_EMAILS",
+							"//clifford/Search/1234/2025_EMAILS/2025_05_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_05_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_04_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_04_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_03_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_03_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_02_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_02_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_01_EMAILS",
+                            "//clifford/Search/1234/2025_EMAILS/2025_01_EMAILS"
+                        ],
+	"Parsed_Email_Save_Folder":"Parsed_Emails",
+	"Restart_Email_Parsing": true
+}
