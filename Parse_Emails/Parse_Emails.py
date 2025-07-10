@@ -295,7 +295,7 @@ def process_email_directory(email_directory:str,parsed_email_save_folder:str,cou
 def main():
     logger:XML_Logger = XML_Logger("Email_Parsing_Log",archive_folder="archive",log_retention_days=7,base_dir=BASE_DIR)
     logger.log_to_xml(message=f"Begin parsing email files to csv and json.",basepath=logger.base_dir,status="INFO")
-    configuration:dict[str,str]|None = load_configuration(os.path.join(BASE_DIR, "Parse_Email_To_Excel_Configuration.json"))
+    configuration:dict[str,str]|None = load_configuration(os.path.join(BASE_DIR, "Parse_Emails_Configuration.json"))
     if configuration is None:
         return
 
@@ -304,7 +304,7 @@ def main():
     for email_directory in email_directories:
         count = process_email_directory(email_directory=email_directory,parsed_email_save_folder=configuration["Parsed_Email_Save_Folder"],write_mode='w',count=count,logger=logger)
         
-    logger.log_to_xml(message=f"Finished parsing email files to csv and json.",basepath=logger.base_dir,status="INFO")
+    logger.log_to_xml(message=f"Finished parsing email files to csv and json.",basepath=logger.base_dir,status="SUCCESS")
     logger.save_variable_info(globals_dict=globals(),locals_dict=locals(),variable_save_path="Parse_Emails_Variables.json")
 
 if __name__ == "__main__":
