@@ -239,7 +239,7 @@ def _process_individual_eml_file(file:os.DirEntry[str],email_directory:str,parse
         return eml_date,senders["from"],eml_receivers["to"],eml_receivers["cc"],eml_receivers["bcc"],subjects,eml_body
     except Exception as exception:
         logger.log_to_xml(message=f"Error while parsing {email_directory}/{file.name.split('.')[0]}.txt. Official error thrown: {traceback.format_exc()}",basepath=logger.base_dir,status="ERROR")
-        return ""
+        return "","","","","","",""
 
 def hash_eml_body(eml_body:str):
     encoded_body:str = eml_body.encode('utf-8')
